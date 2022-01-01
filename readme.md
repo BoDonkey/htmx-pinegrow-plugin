@@ -1,0 +1,2 @@
+# HTMX plugin for Pinegrow
+This repo is the home of a project to add the powers of HTMX to Pinegrow. From the HTMX.org docs - "HTMX is a library that allows you to access modern browser features directly from HTML, rather than using javascript."
