@@ -171,10 +171,10 @@ $(function () {
             },
             sections: {
                 hx_att_encoding: {
-                    name: 'Disable',
+                    name: 'Encoding',
                     fields: {
-                        hx_disable: {
-                            'name': 'Disable section?',
+                        hx_encoding: {
+                            'name': 'Change encoding?',
                             'type': 'checkbox',
                             'action': 'element_attribute',
                             'attribute': 'hx-encoding',
@@ -557,7 +557,7 @@ $(function () {
                     fields: {
                         hx_request: {
                             'name': 'Request value?',
-                            'placeholder': '\"timeout\":100'
+                            'placeholder': '\"timeout\":100',
                             'type': 'text',
                             'action': 'element_attribute',
                             'attribute': 'hx-request',
@@ -701,11 +701,10 @@ $(function () {
                                     key: 'none',
                                     name: 'none'
                                 }
-                            ]
+                            ],
                             'empty_attribute': false,
                             'attribute_keep_if_empty': false
                         }
-                        //Add in modifiers fields
                     }
                 }
             }
@@ -762,7 +761,6 @@ $(function () {
                             'empty_attribute': false,
                             'attribute_keep_if_empty': false
                         }
-                        //need to add modifiers?
                     }
                 }
             }
