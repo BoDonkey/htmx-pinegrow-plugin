@@ -16,7 +16,7 @@ $(function () {
         pinegrow.addFramework(framework);
 
         //Uncomment the line below to get the inspector window to automatically open
-        require('nw.gui').Window.get().showDevTools();
+        //require('nw.gui').Window.get().showDevTools();
 
         //Adds a menu item for adding the HTMX script
         framework.on_page_menu = (page, items) => {
@@ -194,7 +194,7 @@ $(function () {
             action: true,
             not_main_type: true,
             meta: {
-                helptext: 'Enables an HTMX extension for a section. For multiple extensions add a comma separated list. Inheritable. Use the "ignore:" prefix on children that you don\'t want to target.',
+                helptext: 'Enables an HTMX extension for a section. For multiple extensions add a comma separated list. Inheritable. Use the \'ignore:\' prefix on children that you don\'t want to target.',
                 helplink: 'https://htmx.org/attributes/hx-ext/'
             },
             sections: {
@@ -359,7 +359,7 @@ $(function () {
             action: true,
             not_main_type: true,
             meta: {
-                helptext: 'Allows you to filter the parameters submitted with an AJAX request. Takes "*", "none", "not <param-list>", or "<param-list>" with the list as a comma separated list of names. Inhertitable.',
+                helptext: 'Allows you to filter the parameters submitted with an AJAX request. Takes \'*\', \'none\', \'not &lt;param-list&gt;\', or \'&lt;param-list&gt;\' with the list as a comma separated list of names. Inhertitable.',
                 helplink: 'https://htmx.org/attributes/hx-params/'
             },
             sections: {
@@ -494,7 +494,7 @@ $(function () {
             action: true,
             not_main_type: true,
             meta: {
-                helptext: 'Pushes a new entry into the browser location bar and creates a history entry. Can be "true", "false", or a custom string. Inherited.',
+                helptext: 'Pushes a new entry into the browser location bar and creates a history entry. Can be \'true\', \'false\', or a custom string. Inherited.',
                 helplink: 'https://htmx.org/attributes/hx-push-url/'
             },
             sections: {
@@ -548,7 +548,7 @@ $(function () {
             action: true,
             not_main_type: true,
             meta: {
-                helptext: 'Allows you to configure various aspects of the request. Takes "timeout" in ms, "credentials", or "noHeaders". Special characters should be escaped and <code>js:</code> can be used to pass a function. Inheritable.',
+                helptext: 'Allows you to configure various aspects of the request. Takes \'timeout\' in ms, \'credentials\', or \'noHeaders\'. Special characters should be escaped and <code>js:</code> can be used to pass a function. Inheritable.',
                 helplink: 'https://htmx.org/attributes/hx-request/'
             },
             sections: {
@@ -557,7 +557,7 @@ $(function () {
                     fields: {
                         hx_request: {
                             'name': 'Request value?',
-                            'placeholder': '\"timeout\":100',
+                            'placeholder': '\'timeout\':100',
                             'type': 'text',
                             'action': 'element_attribute',
                             'attribute': 'hx-request',
@@ -604,7 +604,7 @@ $(function () {
             action: true,
             not_main_type: true,
             meta: {
-                helptext: 'Allows you to work with <a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events" target="_blank">Server Sent Event</a> EventSources directly from HTML. The value of the attribute can be one or more of the following, separated by white space: connect:<url> or swap<eventName>. Inheritable.',
+                helptext: 'Allows you to work with <a href=\'https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events\' target=\'_blank\'>Server Sent Event</a> <b>EventSources</b> directly from HTML. The value of the attribute can be one or more of the following, separated by white space: connect:&lt;url&gt; or swap&lt;eventName&gt;. Inheritable.',
                 helplink: 'https://htmx.org/attributes/hx-sse/'
             },
             sections: {
@@ -632,7 +632,7 @@ $(function () {
             action: true,
             not_main_type: true,
             meta: {
-                helptext: 'Allows you to specify content to be swapped into the DOM other than at the target. Values can be "true", hx-swap value, or "<hx-swap value>:CSS selector".',
+                helptext: 'Allows you to specify content to be swapped into the DOM other than at the target. Values can be \'true\', &lt;hx-swap value&gt;, or &lt;hx-swap value&gt;:&lt;CSS selector&gt;.',
                 helplink: 'https://htmx.org/attributes/hx-swap-oob/'
             },
             sections: {
@@ -717,7 +717,7 @@ $(function () {
             action: true,
             not_main_type: true,
             meta: {
-                helptext: 'Allows you to target a different element for swapping than the AJAX request element. Can be a CSS query, <b>this</b>, <b>closest <CSS selector></b>,or <b>closest <CSS selector></b>.',
+                helptext: 'Allows you to target a different element for swapping than the AJAX request element. Can be a CSS query, <b>this</b>, <b>closest &lt;CSS selector&gt;</b>,or <b>find &lt;CSS selector&gt;</b>.',
                 helplink: 'https://htmx.org/attributes/hx-target/'
             },
             sections: {
@@ -745,7 +745,7 @@ $(function () {
             action: true,
             not_main_type: true,
             meta: {
-                helptext: 'Allows you to specify what triggers an AJAX response. Can be an event name (with filters and modifiers), a polling def. of the form <b>every <timing declaration></b>, or comma-separated list of events.',
+                helptext: 'Allows you to specify what triggers an AJAX response. Can be an event name (with filters and modifiers), a polling def. of the form <b>every &lt;timing declaration&gt;</b>, or comma-separated list of events.',
                 helplink: 'https://htmx.org/attributes/hx-trigger/'
             },
             sections: {
