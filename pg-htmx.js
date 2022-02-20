@@ -12,6 +12,10 @@ $(function () {
         framework.author_link = 'https://plugins.springhilldesign.net';
 
         framework.has_actions = true;
+        
+        //to keep the plugin loaded between pages and projects we need to set the default to true.
+        //Comment the line below out to block this behavior
+        framework.default = true;
 
         pinegrow.addFramework(framework);
 
