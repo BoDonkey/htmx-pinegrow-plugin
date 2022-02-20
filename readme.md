@@ -4,6 +4,8 @@ This plugin simplifies using the [HTMX library](https://htmx.org/) in the [Pineg
 ## Installation & Usage
 To use this plugin, open a project and page in the Pinegrow Web Editor. Navigate to File -> Manage libraries & plugins and scroll to the bottom of the modal. Click on "Load plugin", select the 'pg-htmx.js' file, and click "add".
 
+From the Page menu there will now be an option to add the HTMX library script to the page.
+
 After selecting an element on the page you can open the Actions panel for a list of HTMX attributes to be added. That is it!
 
 ## Feedback
