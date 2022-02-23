@@ -721,7 +721,7 @@ $(function () {
             action: true,
             not_main_type: true,
             meta: {
-                helptext: 'Allows you to synchronize AJAX requests between multiple elements. Takes the form of a &lt;CSS selector&gt; or <code>this</code>, followed by an optional colon and synching strategy. Strategies are: \"drop\", \"abort\", \"replace\", or \"queue\". It can also take a <code>queue</code> modifier of \"first\", \"last\", or \"all\". It is inherited and can be placed on a parent.',
+                helptext: 'Allows you to synchronize AJAX requests between multiple elements. Takes the form of a &lt;CSS selector&gt; or <code>this</code>, followed by an optional colon and synching strategy. Strategies are: \'drop\', \'abort\', \'replace\', or \'queue\'. It can also take a <code>queue</code> modifier of \'first\', \'last\', or \'all\'. It is inherited and can be placed on a parent.',
                 helplink: 'https://htmx.org/attributes/hx-sync/'
             },
             sections: {
