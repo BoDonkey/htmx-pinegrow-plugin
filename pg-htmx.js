@@ -715,6 +715,33 @@ $(function () {
         });
         htmx_attributes.push(swapAttribute);
 
+        let swapAttribute = new PgComponentType('htmx-hx-sync', 'hx-Sync', {
+            selector: '[hx-sync]',
+            attribute: 'hx-sync',
+            action: true,
+            not_main_type: true,
+            meta: {
+                helptext: 'Allows you to synchronize AJAX requests between multiple elements. Takes the form of a &lt;CSS selector&gt; or <code>this</code>, followed by an optional colon and synching strategy. Strategies are: \"drop\", \"abort\", \"replace\", or \"queue\". It can also take a <code>queue</code> modifier of \"first\", \"last\", or \"all\". It is inherited and can be placed on a parent.',
+                helplink: 'https://htmx.org/attributes/hx-sync/'
+            },
+            sections: {
+                hx_att_sync: {
+                    name: 'Sync',
+                    fields: {
+                        hx_sync: {
+                            'name': 'Sync value?',
+                            'type': 'text',
+                            'action': 'element_attribute',
+                            'attribute': 'hx-sync',
+                            'empty_attribute': false,
+                            'attribute_keep_if_empty': false
+                        }
+                    }
+                }
+            }
+        });
+        htmx_attributes.push(syncAttribute);
+
         let targetAttribute = new PgComponentType('htmx-hx-target', 'hx-Target', {
             selector: '[hx-target]',
             attribute: 'hx-target',
