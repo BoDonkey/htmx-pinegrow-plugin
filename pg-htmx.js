@@ -715,7 +715,7 @@ $(function () {
         });
         htmx_attributes.push(swapAttribute);
 
-        let swapAttribute = new PgComponentType('htmx-hx-sync', 'hx-Sync', {
+        let syncAttribute = new PgComponentType('htmx-hx-sync', 'hx-Sync', {
             selector: '[hx-sync]',
             attribute: 'hx-sync',
             action: true,
