@@ -164,6 +164,32 @@ $(function () {
         });
         htmx_attributes.push(disableAttribute);
 
+        let disinheritAttribute = new PgComponentType('htmx-hx-disinherit', 'hx-Disinherit', {
+            selector: '[hx-disinherit]',
+            attribute: 'hx-disinherit',
+            action: true,
+            not_main_type: true,
+            meta: {
+                helptext: 'Allows you to control automatic attribute inheritance. An example scenario is to allow you to place an <b>hx-boost</b> on the <b>body</b> element of a page, but overriding that behavior in a specific part of the page to allow for more specific behaviors. Examples: <code>hx-disinherit=\'*\'</code> all attribute inheritance for this element will be disabled, <code>hx-disinherit=\'hx-select hx-get hx-target\'</code> disable inheritance for only one or multiple specified attributes',
+                helplink: 'https://htmx.org/attributes/hx-disinherit/'
+            },
+            sections: {
+                hx_att_disinherit: {
+                    name: 'Disinherit',
+                    fields: {
+                        hx_disinherit: {
+                            'name': 'Disinherit parent attribute?',
+                            'type': 'input',
+                            'action': 'element_attribute',
+                            'attribute': 'hx-disinherit',
+                            'empty_attribute': false
+                        }
+                    }
+                }
+            }
+        });
+        htmx_attributes.push(disinheritAttribute);
+
         let encodingAttribute = new PgComponentType('htmx-hx-encoding', 'hx-Encoding', {
             selector: '[hx-encoding]',
             attribute: 'hx-encoding',
